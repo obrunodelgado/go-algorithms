@@ -56,3 +56,5 @@ Here are the `5` valid pairs when `k = 3`:
 - (2, 4) -> ar[2] + ar[4] = 2 + 1 = 3
 - (4, 5) -> ar[4] + ar[5] = 1 + 2 = 3
 
+For more information:
+https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
