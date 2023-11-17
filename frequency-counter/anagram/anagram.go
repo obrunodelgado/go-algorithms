@@ -7,6 +7,10 @@ func main() {
 	word2 := "silent"
 	fmt.Println(areAnagrams(word1, word2)) // true
 
+	word1 = "listena"
+	word2 = "silent"
+	fmt.Println(areAnagrams(word1, word2)) // false
+
 	word1 = "hello"
 	word2 = "billion"
 	fmt.Println(areAnagrams(word1, word2)) // false
@@ -21,6 +25,10 @@ func main() {
 }
 
 func areAnagrams(word1 string, word2 string) bool {
+	if len(word1) != len(word2) {
+		return false
+	}
+
 	frequency := make(map[rune]int)
 	for _, value := range word1 {
 		frequency[value] += 1
