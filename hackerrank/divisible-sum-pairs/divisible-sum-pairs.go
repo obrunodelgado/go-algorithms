@@ -25,7 +25,7 @@ func divisibleSumPairs(ar []int, k int) int {
 		if i == 0 || (k%2 == 0 && i == k/2) {
 			count += (frequency[i]*frequency[i] - 1) / 2
 		} else {
-			count += frequency[i] * frequency[k-1]
+			count += frequency[i] * frequency[k-i]
 		}
 	}
 
